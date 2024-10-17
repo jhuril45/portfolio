@@ -8,8 +8,6 @@ import ProjectDetails from "../components/ProjectDetails";
 
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
 export default function Home() {
-   
-  document.title = "Project List";
 
   const [isModalOpen, setModalOpen] = useState(false);
   // const [projectList, setProjectList] = useState([]);
