@@ -18,14 +18,38 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  /* background: linear-gradient(
+  background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb)); */
+    rgb(var(--background-start-rgb));
+
+    
 }
 
+.navbar {
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+.content {
+  padding-top: 60px;
+}
+
+.project-image {
+  height: 250px;
+  width: 100%;
+  object-fit: contain;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;

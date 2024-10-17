@@ -1,11 +1,16 @@
 import Image from "next/image";
 import Link from 'next/link'
 
+export const metadata = {
+  title: "JHUR",
+  description: "Jhuril Bandola Developer Profile",
+};
+
 export default function Home() {
   return (
     <>
       
-      <main className="flex bg-gray-100 h-auto flex-col items-center justify-between px-7 md:px-24">
+      <main className="flex h-auto flex-col items-center justify-between px-7 md:px-24">
 
         <div className="relative grid place-items-center md:flex md:place-items-center">
           <div className="flex-none">
@@ -24,7 +29,7 @@ export default function Home() {
                 className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
                 src="/logo_transparent.svg"
                 alt="Next.js Logo"
-                width={350}
+                width={200}
                 height={100}
                 priority
               />
