@@ -51,11 +51,11 @@ export default function Home() {
                 I specialize in creating efficient and innovative solutions using Vue.js, React.js, and Laravel.
               </p>
             </div>
-            <div className="my-6 flex items-center justify-start gap-x-6">
+            <div className="my-2 flex items-center justify-start gap-x-6">
               <a
                 href="https://www.linkedin.com/in/jhuril-bandola-685712186/"
                 target="_blank"
-                className={`text-sm text-gray-100 font-bold`}
+                className={`p-2 rounded-lg bg-gray-900 text-sm text-gray-100 font-bold`}
               >
                 <span className="flex items-center justify-end">
                   LinkedIn
@@ -70,14 +70,15 @@ export default function Home() {
                 </span>
               </a>
             </div>
-            <div className="pt-6">
-              <Link
+            <div className="pt-2">
+              <a
                 href="/projects"
-                className="rounded-lg bg-gray-900 p-3 text-white my-4 md:p-4"
+                className="rounded-lg bg-gray-900 p-3 text-white my-4 md:p-4 w-full text-center"
                 aria-current="page"
+                style={{display: 'block'}}
               >
                 View Projects
-              </Link>
+              </a>
             </div>
           </div>
         </div>
