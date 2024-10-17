@@ -11,7 +11,6 @@ export default function Home() {
     <>
       
       <main className="flex h-auto flex-col items-center justify-between px-7 md:px-24">
-
         <div className="relative grid place-items-center md:flex md:place-items-center">
           <div className="flex-none">
             <div className="hidden sm:block">
@@ -52,6 +51,25 @@ export default function Home() {
                 I specialize in creating efficient and innovative solutions using Vue.js, React.js, and Laravel.
               </p>
             </div>
+            <div className="my-6 flex items-center justify-start gap-x-6">
+              <a
+                href="https://www.linkedin.com/in/jhuril-bandola-685712186/"
+                target="_blank"
+                className={`text-sm text-gray-100 font-bold`}
+              >
+                <span className="flex items-center justify-end">
+                  LinkedIn
+                </span>
+              </a>
+              <a
+                href="mailto:jhuril45@gmail.com"
+                className={`text-sm text-gray-100 font-bold`}
+              >
+                <span className="flex items-center justify-end">
+                  Email: jhuril45@gmail.com
+                </span>
+              </a>
+            </div>
             <div className="pt-6">
               <Link
                 href="/projects"
@@ -64,6 +82,7 @@ export default function Home() {
           </div>
         </div>
       </main>
+      
     </>
     
   );

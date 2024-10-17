@@ -56,23 +56,38 @@ export default function Home() {
   return (
     <>
       <main className="px-6 py-4 sm:px-24">
+      
         <div className="bg-white rounded-s">
-          <div className="px-4 sm:px-6 sm:py-5 ">
-            <h2 className="text-2xl font-bold tracking-tight text-gray-900">Projects</h2>
+          <div className="px-4 py-3 sm:px-6 sm:py-5">
+            
+            
+            <h2 className="flex justify-between text-2xl font-bold tracking-tight text-gray-900">
+              Projects
+              <div className="flex items-center justify-end gap-x-3">
+                <a
+                  href="mailto:jhuril45@gmail.com"
+                  className={`text-sm text-gray-600 font-bold`}
+                >
+                  <span className="flex items-center justify-end">
+                    jhuril45@gmail.com
+                  </span>
+                </a>
+              </div>
+            </h2>
 
             <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
               {projectList.map((item, index) => (
-                <div className="group relative shadow-xl " onClick={() => viewProject(item)} key={'project-'+index}>
+                <div className="group relative shadow-xl cursor-pointer" onClick={() => viewProject(item)} key={'project-'+index}>
                   <div className="w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75">
                     <img src={item.image} className="project-image"/>
                   </div>
                   <div className="mt-4 flex justify-between">
                     <div className="p-4">
                       <h3 className="text-lg text-gray-900">
-                        <a href="#">
+                        <div>
                           <span aria-hidden="true" className="absolute inset-0"></span>
                           {item.name}
-                        </a>
+                        </div>
                       </h3>
                       <h3 className="text-sm text-gray-600">
                         {item.responsibility}

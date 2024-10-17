@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation'; // Import the usePathname hook
 import {ParseDB} from "../../parseDb.js";
 import { useDispatch, useSelector } from 'react-redux';
+import { PaperClipIcon,DevicePhoneMobileIcon } from '@heroicons/react/24/outline'
 
 const Navbar = () => {
   const projectList = useSelector((state) => state.projects);
