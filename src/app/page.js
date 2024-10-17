@@ -38,7 +38,7 @@ export default function Home() {
             <div className="p-4 border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:dark:bg-zinc-800/30">
               <p>
                 <span className="font-mono font-bold">
-                  Hi, I am a Jhuril,
+                  Hi, I am a Jhuril Bandola,
                 </span>
               </p>
               <p>
